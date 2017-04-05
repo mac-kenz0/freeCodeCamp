@@ -42,3 +42,77 @@
 	display: none;
 	 text-align: center;
 }
+.tic-tac-toe{
+	display: none;
+}
+
+div#one-one {
+    position: absolute;
+    top: 50px;
+    left: 325px;
+}
+
+div#one-two {
+    top: 50px;
+    left: 445px;
+    position: absolute;
+}
+
+div#one-three {
+    top: 50px;
+       left: 565px;
+    position: absolute;
+}
+
+div#two-one {
+    position: absolute;
+        top: 175px;
+    left: 325px;
+}
+
+div#two-two {
+        top: 175px;
+    left: 445px;
+    position: absolute;
+}
+
+div#two-three {
+       top: 175px;
+       left: 565px;
+    position: absolute;
+}
+
+div#three-one {
+    position: absolute;
+    top: 300px;
+    left: 325px;
+}
+
+div#three-two {
+    top: 300px;
+    left: 445px;
+    position: absolute;
+}
+
+div#three-three {
+    top: 300px;
+          left: 565px;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
