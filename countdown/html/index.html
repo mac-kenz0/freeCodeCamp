@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pomodoro</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<script src="../js/jquery.countdown.js" type="text/javascript" charset="utf-8"></script>
+<script>
+
+$(document).ready(function(){
+	$("#minus-minute").on("click", function(){
+		var myValue = $('#set-timer').text() - 1;
+		$("#set-timer").html(myValue);
+		$("#time").html(myValue);
+	});
+		$("#plus-minute").on("click", function(){
+		var myValue = $('#set-timer').text();
+		myValue = parseInt(myValue) + 1;
+		$("#set-timer").html(myValue);
+		$("#time").html(myValue);
+	});
+		$("#start").on("click", function(){
+			var convertMinute = $('#set-timer').text() + "m";
+			$("#div-id").timer({
+		 		duration: convertMinute, 
+		 	});
+		});
+
+		$("#reset").on("click", function(){
+			var newTime = $('#set-timer').text();
+			$("#div-id").timer('remove');
+			$("#div-id").html(newTime);
+		});
+});
+
+</script>
+
+</head>
+<body>
+
+<div class = "container">
+	<div  id= "minus-minute" class="set-timer">-</div>
+	<div id= "set-timer" class="set-timer">25</div>
+	<div id= "plus-minute" class="set-timer">+</div>
+</div>
+
+<div id ="div-id" class = "countdown">
+	<span id="time">25</span>
+</div>
+
+<div class = "controls">
+	<div id="start">Start</div>
+	<div id="reset">Reset</div>
+</div>
+
+
+
+</html>
