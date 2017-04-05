@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function($) {
+			var user = null;
+			var computer = null;
+			document.getElementsByClassName("tic-tac-toe").disabled = true;
+			$("#user-choose-x").on('click', function() {
+				user = "X";
+				computer = "O";
+				$("#user-choose-o").css("background-color", "#fff");
+				$("#user-choose-x").css("background-color", "#eae8e8");
+				 $(".user-confirmation").html("You've chosen to be " + user + ". The computer will be " + computer + " .");
+				 $('#start').css("display", "block");
+				// enable tic tac toe board
+			});
+			$("#user-choose-o").on('click', function() {
+				user = "O";
+				computer = "X";
+				$("#user-choose-o").css("background-color", "#eae8e8");
+				$("#user-choose-x").css("background-color", "#fff");
+				 $(".user-confirmation").html("You've chosen to be " + user + ". The computer will be " + computer +  ".");
+				 $('#start').css("display", "block");
+				// enable tic tac toe board
+			});
+			
+			$('#start').on('click', function() {
+				$(".user-prompt").css("display", "none");
+				$(".play-text").css("display", "block");
+				$(".play-text").html("You're user " + user + ". Play on!");
+			});
+
+
+		});
+
+
+	</script>
+</head>
+<body>
+<div class = "container">
+<div class="user-prompt">
+	<div class = "user-prompt-text">Choose X or 0 </div>
+	<div id = "user-choose-x" class="play-choice">X</div>
+	<div id = "user-choose-o" class="play-choice">O</div>
+	<div class = "user-confirmation"></div>
+	<div id='start'>Start game.</div>
+</div>
+	<div class = "play-text">
+		
+	</div>
+<div class="tic-tac-toe">
+	<div class = "row">
+		<div class = "square-box" id="one-one"> </div>
+		<div class = "square-box" id="one-two"> </div>
+		<div class = "square-box" id="one-three"> </div>
+	</div>
+	<div class = "row">
+		<div class = "square-box" id="two-one"> </div>
+		<div class = "square-box" id="two-two"> </div>
+		<div class = "square-box" id="two-three"> </div>
+	</div>
+	<div class = "row">
+		<div class = "square-box" id="three-one"> </div>
+		<div class = "square-box" id="three-two"> </div>
+		<div class = "square-box" id="three-three"> </div>
+	</div>		
+</div>
+	</div>
+</div>
+</body>
+</html>
