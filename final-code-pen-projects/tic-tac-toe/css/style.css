@@ -1,0 +1,118 @@
+.square-box {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.play-choice {
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    padding-top: 10px;
+}
+.tic-tac-toe {
+    margin-top: 30px;
+    text-align: center;
+}
+.container {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.user-prompt {
+    text-align: center;
+}
+.user-prompt-text {
+    margin-bottom: 10px;
+}
+#start {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    height: 30px;
+    padding-top: 10px;
+    display: none;
+    margin-top: 15px;
+}
+.play-text{
+	display: none;
+	 text-align: center;
+}
+.tic-tac-toe{
+	display: none;
+}
+
+div#one-one {
+    position: absolute;
+    top: 50px;
+    left: 325px;
+}
+
+div#one-two {
+    top: 50px;
+    left: 445px;
+    position: absolute;
+}
+
+div#one-three {
+    top: 50px;
+       left: 565px;
+    position: absolute;
+}
+
+div#two-one {
+    position: absolute;
+        top: 175px;
+    left: 325px;
+}
+
+div#two-two {
+        top: 175px;
+    left: 445px;
+    position: absolute;
+}
+
+div#two-three {
+       top: 175px;
+       left: 565px;
+    position: absolute;
+}
+
+div#three-one {
+    position: absolute;
+    top: 300px;
+    left: 325px;
+}
+
+div#three-two {
+    top: 300px;
+    left: 445px;
+    position: absolute;
+}
+
+div#three-three {
+    top: 300px;
+          left: 565px;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
