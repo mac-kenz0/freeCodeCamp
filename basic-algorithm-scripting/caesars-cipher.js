@@ -1,3 +1,8 @@
+/* TODO: 
+  need deeper understanding of how the map function workks,
+  how this algorithm operates
+*/
+
 function rot13(str) {
   // Split str into a character array
   return str.split('')
