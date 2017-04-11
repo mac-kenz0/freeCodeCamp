@@ -1,0 +1,24 @@
+html {
+background: linear-gradient( to right, #e5e5ff, #fd8a2a);
+}
+div#quoteBtn {
+    text-align: right;
+}
+
+.quote-container {
+    margin: 100PX auto;
+    width: 300px;
+    border: 1px solid white;
+    padding: 30px 20px 30px 20px;
+    background: white;
+}
+div#quoteBtn {
+    /* border: 1px solid black; */
+    margin-left: 120px;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px 0px;
+    background: #e0e0e0;
+    /* color: white; */
+    
+}
