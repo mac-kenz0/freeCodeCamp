@@ -1,14 +1,19 @@
-
-function sumAll(arr) {
-  var total = 0;
+function reduceArray(num1, num2, total){
   
-  var min = Math.min(arr[0], arr[1]);
-  var max = Math.max(arr[0], arr[1]);
- 
-  for (var i = min; i <= max; i++){
-    total += i;
+  total = total + num1 + num2;
+  if (num1 == num2 || num1 + 1 == num2){
+    return total;
   }
-  return total;
+  num1++; num2--;
+  return reduceArray(num1, num2, total);
+  
+}
+function sumAll(arr) {
+  arr = arr.sort(function(a, b){
+    return a - b;
+  });
+ var total = 0;
+ return reduceArray(arr[0], arr[1], total);          
 }
 
 sumAll([1, 4]);
